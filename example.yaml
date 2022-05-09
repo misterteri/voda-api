@@ -1,0 +1,5 @@
+apiVersion: kubeflow.org/v1
+kind: MPIJob
+metadata:
+  name: abcd
+  namespace: abcdefgg
