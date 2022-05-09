@@ -32,6 +32,7 @@ func main() {
 			logger.Fatal(err)
 		}
 	}() // run in background
+	logger.Println("API up and running")
 
 	signalChannel := make(chan os.Signal, 1)
 	signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
